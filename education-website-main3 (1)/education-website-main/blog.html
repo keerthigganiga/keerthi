@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blogs</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+	<link rel="stylesheet" href="blog.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/logo.svg" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="blog.html" class="active">Blog</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="registrat.html">Registration</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Hero section starts from here -->
+	<section id="about-home">
+		<h2>
+			Blogs.
+		</h2>
+	</section>
+	<!-- Hero section ends from here -->
+
+
+	<!-- Blog container starts from here -->
+	<section id="blog-container">
+		<div class="blogs">
+			<div class="post">
+				<img src="img/b1.jpg" alt="">
+				<h3>Learn Web Development in the easiest way</h3>
+				<p>
+					Full stack development is the end-to-end development of applications. It includes both the front end and back end of an application.20+ micro skilling exercises & 5+ work-like professional projects to master CS Fundamentals and Full-Stack or Backend skills in an actual developer environment.Learn from carefully curated learning paths with up-to-date interactive courses, and receive 24x7 AI assistance as you develop your coding skills.
+				</p>
+				
+			</div>
+
+			<div class="post">
+				<img src="img/b2.jpg" alt="">
+				<h3>Learn Web design-EduTech university</h3>
+				<p>
+					Improve you skills by building. Choose from over 100+ projects to practice, build for your resume and showcase to the world.Find developers, mentors, and new friends. Attend exclusive events organized by codedamn and have fun while growing your skills.Build projects and boot playgrounds, all within your browser.For every great project you build, we help you make it better with CodeReport™. Get detailed feedback on your projects.
+				</p>
+				
+			</div>
+
+			<div class="post">
+				<img src="img/b3.jpg" alt="">
+				<h3>Learn App Development-TechEduca</h3>
+				<p>
+					Mobile application development is the process of creating software applications that run on a mobile device, and a typical mobile application utilizes a network connection to work with remote computing resources. Hence, the mobile development process involves creating installable software bundles (code, binaries, assets, etc.) , implementing backend services such as data access with an API, and testing the application on target devices.
+				</p>
+				
+			</div>
+
+			<div class="post">
+				<img src="img/b1.jpg" alt="">
+				<h3>Learn Frontend Development-TechEduca </h3>
+				<p>
+					A front-end developer is a type of software developer who specializes in creating and designing the user interface (UI) and user experience (UX) of websites and web applications. The primary responsibility of a front-end developer is to ensure that the visual and interactive aspects of a website or application are user-friendly, aesthetically pleasing, and functionally efficient.
+				</p>
+				
+			</div>
+
+			<div class="post">
+				<img src="img/b2.jpg" alt="">
+				<h3>Learn Python Programming-Techeduca</h3>
+				<p>
+					Python is a popular general-purpose programming language. It is used in machine learning, web development, desktop applications, and many other fields. Fortunately for beginners, Python has a simple, easy-to-use syntax. This makes Python a great language to learn for beginners.
+
+Our Python tutorials will cover all the fundamental concepts of Python. And by the end, you will be comfortable creating projects in Python.
+				</p>
+				
+			</div>
+		</div>
+		<div class="cate">
+			<h2>Categories</h2>
+			<hr>
+			<a href="#">Web Development</a>
+			<hr>
+			<a href="#">Web Design</a>
+			<hr>
+			<a href="#">App Development</a>
+			<hr>
+			<a href="#">Frontend Web</a>
+			<hr>
+			<a href="#">Python Programming</a>
+			<hr>
+			<a href="#">Javascript hacks</a>
+		</div>
+	</section>
+	<!-- Blog container ends from here -->
+
+
+	<!-- Footer section starts from here -->
+	
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>
